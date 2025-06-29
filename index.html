@@ -1,0 +1,215 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Cianjur</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .logo-title img {
+      width: 50px;
+      height: 50px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .hero, .about, .featured, .testimoni, .contact-call {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero {
+      background: url('img/images.jpg') center/cover no-repeat;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      padding: 80px 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .cta-button:hover {
+      background-color: #276c48;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      padding: 0 10px 20px;
+    }
+    .testimoni blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+      background: #f0f0f0;
+      padding: 15px 20px;
+      border-left: 5px solid #2e8b57;
+    }
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsif */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+      .card {
+        max-width: 100%;
+      }
+      .card img {
+        height: 180px;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .grid {
+        justify-content: space-around;
+      }
+      .card img {
+        height: 220px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .grid {
+        justify-content: center;
+      }
+      .card {
+        max-width: 320px;
+      }
+      .card img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="img/logo cianjur.jpg" alt="Logo Wisata">
+      <h1>Wisata Alam Cianjur</h1>
+    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="wisata.html">Destinasi</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Selamat Datang di Surga Alam Cianjur</h2>
+    <p>Temukan keindahan alam pegunungan, air terjun, pantai dan danau di pelosok Cianjur.</p>
+    <a href="wisata.html" class="cta-button">Jelajahi Sekarang</a>
+  </section>
+
+  <section class="about">
+    <h2>Tentang Cianjur</h2>
+    <p>Cianjur adalah sebuah kabupaten di Jawa Barat yang menawarkan kekayaan alam luar biasa, mulai dari pegunungan, air terjun yang memukau, pantai yang membentang luas, hingga situs sejarah megalitikum. Cocok untuk petualang, pecinta alam, dan wisata keluarga.</p>
+  </section>
+
+  <section class="featured">
+    <h2>Destinasi Unggulan</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/curug ngebul.jpg" alt="Curug Ngebul">
+        <h3>Curug Ngebul</h3>
+        <p>Air terjun alami yang sejuk dan dikelilingi hutan lebat.</p>
+      </div>
+      <div class="card">
+        <img src="img/curug citambur.jpg" alt="Curug Citambur">
+        <h3>Curug Citambur</h3>
+        <p>Wisata curug yang terkenal karena pemandangannya seperti di Dunia dongeng.</p>
+      </div>
+      <div class="card">
+        <img src="img/curug cikondang.jpg" alt="Curug Cikondang">
+        <h3>Curug Cikondang</h3>
+        <p>Curug yang sangat digemari oleh kalangan muda karena akses jalan yang mudah dijangkau.</p>
+      </div>
+    </div>
+    <a href="wisata.html" class="cta-button">Lihat Semua Wisata</a>
+  </section>
+
+  <section class="testimoni">
+    <h2>Testimoni Pengunjung</h2>
+    <blockquote>
+      "Perjalanan ke Curug Cibeureum sangat berkesan, udaranya sejuk dan pemandangannya luar biasa!" – Rina, Bandung
+    </blockquote>
+    <blockquote>
+      "Situs Gunung Padang benar-benar unik, kami belajar banyak tentang sejarah!" – Budi, Jakarta
+    </blockquote>
+  </section>
+
+  <section class="contact-call">
+    <h2>Siap Menjelajah?</h2>
+    <p>Hubungi kami untuk informasi lebih lanjut atau pemesanan wisata.</p>
+    <a href="kontak.html" class="cta-button">Hubungi Kami</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mirna S Rahayu. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
